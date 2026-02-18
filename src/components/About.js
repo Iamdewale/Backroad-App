@@ -3,17 +3,16 @@ import Title from './Title'
 
 const About = () => {
   return (
-        <section className="section" id="about">
-   <Title title="about" subTitle="us" />
-   
+    <section className="section" id="about">
+      <Title title="about" subTitle="us" />
+
       <div className="section-center about-center">
+        {/* Image */}
         <div className="about-img">
-          <img
-            src={aboutImg}
-            className="about-photo"
-            alt="awesome beach"
-          />
+          <img src={aboutImg} className="about-photo" alt="beautiful beach" />
         </div>
+
+        {/* Info */}
         <article className="about-info">
           <h3>explore the difference</h3>
           <p>
@@ -26,7 +25,11 @@ const About = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a className="btn">read more</a>
+
+          {/* Button instead of invalid <a> */}
+          <button className="btn" onClick={() => alert('Read more clicked')}>
+            read more
+          </button>
         </article>
       </div>
     </section>
