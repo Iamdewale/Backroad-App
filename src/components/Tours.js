@@ -9,7 +9,7 @@ const Section = () => {
 
       <div className="section-center featured-center">
         {tours.map((tour) => {
-          const { id, image, date, title, info, location, duration, price } = tour
+          const { id, date, title, info, location, duration, price } = tour
           return(
           <article className="tour-card" key={id}>
               <div className="tour-img-container">
